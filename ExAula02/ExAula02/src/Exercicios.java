@@ -188,5 +188,30 @@ public class Exercicios {
 
     }
 
+    public static void ex10() {
+
+        int num;
+
+        do {
+            System.out.println("Digite um número de 1 a 50:");
+            num = input.nextInt();
+
+            if (num > 0 && num < 51) {
+                break;
+            } else {
+                System.out.println("Número inválido, digite novamente.")
+            }
+
+        } while (true);
+
+        for (int i = 1; i <= num; i++) {
+            System.out.printf("%d%n", i);
+        }
+    }
+
+    public static void ex11() {
+        
+    }
+
 
 }
