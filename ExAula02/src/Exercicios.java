@@ -1,9 +1,10 @@
 import java.util.Scanner;
+
 public class Exercicios {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
 
-       ex08();
+       ex11();
         
     }
 
@@ -199,7 +200,7 @@ public class Exercicios {
             if (num > 0 && num < 51) {
                 break;
             } else {
-                System.out.println("Número inválido, digite novamente.")
+                System.out.println("Número inválido, digite novamente.");
             }
 
         } while (true);
@@ -210,7 +211,26 @@ public class Exercicios {
     }
 
     public static void ex11() {
-        
+        // Progressão aritmética
+        int an;
+        int a1;
+        int n;
+        int r;
+
+        System.out.println("Descubra o n-ésimo termo de uma PA");
+        System.out.print("Insira o número inicial: ");
+        a1 = input.nextInt();
+
+        System.out.print("Insira a posição do termo que você quer descobrir: ");
+        n = input.nextInt();
+
+        System.out.print("Informe a razão da PA: ");
+        r = input.nextInt();
+
+        an = a1 + (n - 1) * r;
+
+        System.out.printf("O %dº termo dessa progressão é %d", n, an);
+
     }
 
 
