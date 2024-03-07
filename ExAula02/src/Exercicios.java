@@ -4,7 +4,7 @@ public class Exercicios {
     public static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
 
-       ex11();
+       ex12();
         
     }
 
@@ -191,6 +191,8 @@ public class Exercicios {
 
     public static void ex10() {
 
+        System.out.println("EXERCICIO 10");
+
         int num;
 
         do {
@@ -212,6 +214,9 @@ public class Exercicios {
 
     public static void ex11() {
         // Progressão aritmética
+
+        System.out.println("EXERCICIO 11");
+
         int an;
         int a1;
         int n;
@@ -229,7 +234,29 @@ public class Exercicios {
 
         an = a1 + (n - 1) * r;
 
-        System.out.printf("O %dº termo dessa progressão é %d", n, an);
+        System.out.printf("O %dº termo dessa progressão é %d%n", n, an);
+
+    }
+
+    public static void ex12() {
+
+        System.out.println("EXERCICIO 12");
+
+        double raio;
+        double altura;
+        double result;
+
+        System.out.println("Calculadora de volume de cilindro");
+
+        System.out.print("Informe o raio: ");
+        raio = input.nextFloat();
+
+        System.out.print("Informe a altura: ");
+        altura = input.nextFloat();
+
+        result = 3.14 * raio * raio * altura;
+
+        System.out.printf("Volume: %.2f%n", result);
 
     }
 
