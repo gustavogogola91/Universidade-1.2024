@@ -117,8 +117,32 @@ public class Exercicios {
                 System.out.println(i);
             }
         }
+    }
+
+    public static void ex05() {
 
 
+        System.out.println("EXERCICIO 05");
+
+        int[] arr = new int[5];
+        int n;
+        int cont;
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.printf("Digite o numero para a posição %d: ", i);
+            arr[i] = input.nextInt();
+        }
+
+        System.out.print("Digite um numero qualquer: ");
+        input.nextInt();
+
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == n) {
+                cont++;
+            }
+        }
+
+        System.out.printf("O número %d apareceu %d vez(es) no array", n, cont);
     }
 
     
