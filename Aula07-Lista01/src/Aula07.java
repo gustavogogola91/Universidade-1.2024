@@ -20,23 +20,23 @@ public class Aula07 {
             op = input.nextInt();
 
             System.out.print("Digite o 1º numero: ");
-            num1 = input.nextInt();
+            num1 = input.nextFloat();
 
             System.out.print("Digite o 2º numero: ");
-            num2 = input.nextInt();
+            num2 = input.nextFloat();
 
             switch (op) {
                 case 1:
-                    System.out.printf("Soma de %d + %d = %d", num1, num2, Calculadora.somar(num1, num2));
+                    System.out.printf("Soma de %f + %f = %f", num1, num2, Calculadora.somar(num1, num2));
                     break;
                 case 2:
-                    System.out.printf("Subtração de %d + %d = %d", num1, num2, Calculadora.subtrair(num1, num2));
+                    System.out.printf("Subtração de %f + %f = %f", num1, num2, Calculadora.subtrair(num1, num2));
                     break;
                 case 3:
-                    System.out.printf("Multiplicação de %d + %d = %.0f", num1, num2, Calculadora.multiplicar(num1, num2));
+                    System.out.printf("Multiplicação de %f + %f = %.0f", num1, num2, Calculadora.multiplicar(num1, num2));
                     break;
                 case 4:
-                    System.out.printf("Divisão de %d + %d = %.2f", num1, num2, Calculadora.dividir(num1, num2));
+                    System.out.printf("Divisão de %f + %f = %.2f", num1, num2, Calculadora.dividir(num1, num2));
                     break;
                 case 5:
                     System.out.println("Saindo do programa.");

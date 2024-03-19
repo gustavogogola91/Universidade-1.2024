@@ -1,18 +1,18 @@
 public class Calculadora {
 
-    static int somar(int a, int b) {
+    static float somar(float a, float b) {
         return a + b;
     }
 
-    static int subtrair(int a, int b) {
+    static float subtrair(float a, float b) {
         return a - b;
     }
 
-    static float multiplicar(int a, int b) {
+    static float multiplicar(float a, float b) {
         return a * b;
     }
 
-    static float dividir(int a, int b) {
+    static float dividir(float a, float b) {
         if (b == 0) {
             b = 1;
         }
